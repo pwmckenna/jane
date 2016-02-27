@@ -6,7 +6,7 @@ const app = express();
 app.post('/sms', json(), urlencoded(), text(), (req, res) => {
   console.log('received an sms', req.body.Body);
   generate(req.body.Body).then(msg => (
-    res.status(200).send(`<Response><Sms><Media>${msg}</Media></Sms></Response>`)
+    res.status(200).send(`<Response><Message><Media>${msg}</Media></Message></Response>`)
   ), err => (
     res.status(200).send(`<Response><Sms>${err.message}</Sms></Response>`)
   ));
