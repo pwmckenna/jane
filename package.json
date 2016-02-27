@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint *.js",
-    "test": "mocha src/test --require babel-core/register"
+    "test": "mocha src/test --require babel-core/register --require src/config"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "babel-core": "^6.5.2",
     "babel-preset-pwmckenna": "^1.0.2",
     "eslint-config-pwmckenna": "^1.0.5",
+    "express": "^4.13.4",
     "nconf": "^0.8.4",
     "node-memecaptain-api": "^1.0.5",
     "q": "^1.4.1",
@@ -24,6 +25,7 @@
     "eslint-plugin-react": "^4.1.0",
     "mocha": "^2.4.5",
     "nock-back-mocha": "^1.0.4",
+    "supertest": "^1.2.0",
     "validator": "^5.0.0"
   }
 }
