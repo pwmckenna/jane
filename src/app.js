@@ -1,6 +1,6 @@
 import express from 'express';
 import { json, urlencoded, text } from 'body-parser';
-import { reply } from 'jane';
+import { reply } from './jane';
 const app = express();
 
 app.post('/sms', json(), urlencoded(), text(), (req, res, next) => {
