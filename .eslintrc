@@ -1,3 +1,6 @@
 {
-  "extends": "pwmckenna"
+  "extends": "pwmckenna",
+  "env": {
+    "mocha": true
+  }
 }

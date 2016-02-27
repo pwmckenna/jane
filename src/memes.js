@@ -91,7 +91,7 @@ export const generate = input => Q.fcall(() => {
   assert(meme, 'meme not found');
   const top = input.match(meme.regex)[1];
   const bottom = input.match(meme.regex)[2];
-  var defer = Q.defer();
+  const defer = Q.defer();
   request.post({
     url: 'https://api.imgflip.com/caption_image',
     qs: {

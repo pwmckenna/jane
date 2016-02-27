@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "lint": "eslint *.js",
+    "lint": "eslint src",
     "test": "mocha src/test --require babel-core/register --require src/config"
   },
   "author": "",
