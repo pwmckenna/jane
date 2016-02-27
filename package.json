@@ -13,6 +13,7 @@
   "dependencies": {
     "babel-core": "^6.5.2",
     "babel-preset-pwmckenna": "^1.0.2",
+    "body-parser": "^1.15.0",
     "eslint-config-pwmckenna": "^1.0.5",
     "express": "^4.13.4",
     "nconf": "^0.8.4",
