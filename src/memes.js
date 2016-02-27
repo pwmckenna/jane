@@ -86,7 +86,7 @@ const memes = [
     template_id: 718432
   }
 ];
-export default input => Q.fcall(() => {
+export const generate = input => Q.fcall(() => {
   const meme = memes.find(({ regex }) => regex.test(input));
   assert(meme, 'meme not found');
   const top = input.match(meme.regex)[1];

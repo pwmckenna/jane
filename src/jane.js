@@ -1,11 +1,11 @@
-import generate from './memes';
+import { generate } from './memes';
 import Q from 'q';
 import twilio from 'twilio';
 import path from 'path';
 
 const client = twilio(nconf.get('TWILIO_SID'), nconf.get('TWILIO_AUTH_TOKEN'));
 
-export default input => Q.fcall(() => (
+export const reply = input => Q.fcall(() => (
   generate(input)
 )).then(mediaUrl => (
   client.messages.create({

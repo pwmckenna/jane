@@ -1,5 +1,5 @@
 import assert from 'assert';
-import generate from '../memes'
+import { generate } from '../memes'
 import { isURL } from 'validator';
 
 describe('memes', function () {
