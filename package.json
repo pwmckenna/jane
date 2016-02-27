@@ -1,0 +1,29 @@
+{
+  "name": "jane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint *.js",
+    "test": "mocha src/test --require babel-core/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.5.2",
+    "babel-preset-pwmckenna": "^1.0.2",
+    "eslint-config-pwmckenna": "^1.0.5",
+    "nconf": "^0.8.4",
+    "node-memecaptain-api": "^1.0.5",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
+    "twilio": "^2.9.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^4.1.0",
+    "mocha": "^2.4.5",
+    "nock-back-mocha": "^1.0.4",
+    "validator": "^5.0.0"
+  }
+}
